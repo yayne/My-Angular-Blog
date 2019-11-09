@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container-fluid">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link text-info" routerLink="posts">Posts</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link text-info" routerLink="posts/new">Nouveau Article</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item" routerLinkActive="active" *ngIf="!isAuth">
+                <a class="nav-link text-info" routerLink="auth/signup">Creer un compte</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active" *ngIf="!isAuth">
+                <a class="nav-link text-info" routerLink="auth/signin">Connexion</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a (click)="onSignOut()" *ngIf="isAuth" style="cursor: pointer">Deconnexion</a>
+            </li>
+        </ul>
+    </div>
+</nav>
