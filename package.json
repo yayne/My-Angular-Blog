@@ -21,7 +21,7 @@
     "@angular/router": "~8.0.1",
     "angular-font-awesome": "^3.1.2",
     "angular-material": "^1.1.20",
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.3.1",
     "firebase": "^6.4.2",
     "font-awesome": "^4.7.0",
     "rxjs": "~6.4.0",
